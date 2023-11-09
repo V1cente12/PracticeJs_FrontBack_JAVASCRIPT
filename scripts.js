@@ -115,13 +115,73 @@ console.log(person.sons);
 console.log(person.sons[0]);
 console.log(person.sons[1]);*/
 
-
-class Persona{
+/* class Persona{
     constructor(nombre, apellido,edad){
         this.nombre = nombre 
         this.apellido = apellido
         this.edad = edad
 
-        this.datos = 
+       
+    }
+}*/
+
+class Libro{
+    constructor(title, author,year,gender){
+        this.title = title
+        this.author = author
+        this.year = year
+        this.gender = gender
+    }
+    getAuthor(){
+        return this.author
+    }
+    bookInfo(){
+       return `${this.title} es un libro de ${this.gender} escrito por ${this.author}
+       en el año ${this.year}`
+    }
+    getGender(){
+      
+        return this.gender
     }
 }
+
+let libros = []
+while(libros.length<2){
+    let title = prompt('dame titulo')
+    let author = prompt('dame autor')
+    let year = prompt('dame yeaer')
+    let gender = prompt('dame gender').toLowerCase()
+
+    if(title != '' && author!='' && !isNaN(year) && year.length==4 && (gender== 'aventura'|| gender=='terror' || gender=='fantasia'))
+    {
+        libros.push(new Libro(title,author,year,gender))
+    }
+ }  
+ 
+   
+const showAllBooks=()=>{
+    console.log(libros)
+ } 
+ 
+
+ const showauthors=()=>{
+    let autores =[]
+    for(const Libro of libros){
+        autores.push(Libro.getAuthor());
+    }
+    console.log(autores.sort());
+ }
+ const showGender =()=>{
+    const gender = prompt("ingroduce gender")
+    for(const Libro of libros){
+       if(Libro.getGender() == gender){
+        console.log(Libro.bookInfo())
+       }
+    }
+
+ }
+
+ //showAllBooks()
+ //showauthors()
+ showGender()
+
