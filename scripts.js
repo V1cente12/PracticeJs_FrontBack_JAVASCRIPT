@@ -124,8 +124,7 @@ console.log(person.sons[1]);*/
        
     }
 }*/
-
-class Libro{
+/* class Libro{
     constructor(title, author,year,gender){
         this.title = title
         this.author = author
@@ -184,4 +183,25 @@ const showAllBooks=()=>{
  //showAllBooks()
  //showauthors()
  showGender()
+
+
+ */
+/* let word = "hola mundo";
+ console.log(Array.from(word));
+ console.log(word.split(" ")); */
+/* const letters  =['b','a','z'];
+
+ console.log(letters.sort()); */
+/* const numbers =[12,25,47,84, 98,13]
+ //numbers.forEach((number)=>console.log(number))
+ numbers.forEach((number, index)=>console.log(`${number} esta en la posicion ${index}`))
+
+
+ */
+/*const words= ['html', 'css', 'javscript','php']
+console.log(words.some(word => word.length)); */
+
+const numbers =[12,25,47,84, 98,13]
+numbers.map(number => console.loh numero*2)
+
 
