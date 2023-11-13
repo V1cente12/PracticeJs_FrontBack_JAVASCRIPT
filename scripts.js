@@ -200,8 +200,20 @@ const showAllBooks=()=>{
  */
 /*const words= ['html', 'css', 'javscript','php']
 console.log(words.some(word => word.length)); */
+/*const numbers =[12,25,47,84, 98,13]
+numbers.map(number => console.loh numero*2) */
 
-const numbers =[12,25,47,84, 98,13]
-numbers.map(number => console.loh numero*2)
+//plit operator
+/* let users = ['javier', 'david', 'rosa', 'juan', 'mercedez']
+let newUsers =['marta', 'jaime', 'laura']
+
+//users.push(newUsers[0], newUsers[1],newUsers[2])
+
+users.push(...newUsers);
+console.log(users);
+*/
+//copiar arrays
+
+
 
 
