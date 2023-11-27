@@ -232,13 +232,14 @@ console.log(arrayConcat);*/
 
 
 //libreria math 
-const numbers = [ -12,2,3,23,2]
+//const numbers = [ -12,2,3,23,2]
 
 /** console.log(Math.max(...numbers));
 */
 
 //eliminar elementos duplicados 
-console.log([...new Set(numbers)]);
+//console.log([...new Set(numbers)]);
+
 
 
 
