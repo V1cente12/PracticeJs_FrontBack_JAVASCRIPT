@@ -241,6 +241,29 @@ console.log(arrayConcat);*/
 //console.log([...new Set(numbers)]);
 
 
+/*
+document.getElementById('id') - acceder a un elemento a traves de su id
+
+document.queryselector('selectorCSS') - accede al primer elemento que coincida con el selector CSS
+
+document.queryselectorall]('selectorCss') - accede a todos los elementos que coincidan con el selector cssm devuelve un nodelist 
+*/
+/** const title = document.getElementById('title');
+title.textContent = 'DOM  accediendo a nodos';
+console.log(title);*/
+
+//const paragraph = document.querySelector('.paragraph:nth-child(2)');
+//console.log(paragraph);
+
+const paragraphs        = document.querySelectorAll('.paragraph');
+//const paragraphsSpread  = [...document.querySelectorAll('.paragraph')];
+const paragraphsArray   = Array.from(document.querySelectorAll('.paragraph')); 
+
+paragraphs[0].style.color = 'red';
+//paragraphs.map(p=>p.style.color='green');
+//paragraphsSpread.map(p=>p.style.color='green');
+paragraphsArray.map(p=>p.style.color='blue');
+console.log(paragraphs);
 
 
 
