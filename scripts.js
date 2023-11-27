@@ -264,6 +264,7 @@ paragraphs[0].style.color = 'red';
 //paragraphsSpread.map(p=>p.style.color='green');
 paragraphsArray.map(p=>p.style.color='blue');
 console.log(paragraphs);
+console.log("rama prueba")
 
 
 
