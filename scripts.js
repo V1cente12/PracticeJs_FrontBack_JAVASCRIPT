@@ -214,6 +214,33 @@ console.log(users);
 */
 //copiar arrays
 
+// concatenar arrays
+/*let array1 = [1,2,3,4];
+let array2 = [5,6,7,8];
+//let arrayConcat = array1.concat(array2);
+let arrayConcat = [...array1, ...array2];
+console.log(arrayConcat);*/ 
+
+
+//enviar un numero indefinido de argumentos aq una funcion  (parametros REST)
+    /*const restParms = (...numbers) => {
+        console.log(numbers);
+
+    }
+
+    restParms(1,2,3,4) */
+
+
+//libreria math 
+const numbers = [ -12,2,3,23,2]
+
+/** console.log(Math.max(...numbers));
+*/
+
+//eliminar elementos duplicados 
+console.log([...new Set(numbers)]);
+
+
 
 
 
