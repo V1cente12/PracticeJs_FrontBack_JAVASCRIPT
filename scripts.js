@@ -326,9 +326,9 @@ console.log(title.textContent) */
 
 
 
-const button = document.getElementById('button')
-const box = document.getElementById('box')
-const input = document.getElementById('input')
+// const button = document.getElementById('button')
+// const box = document.getElementById('box')
+// const input = document.getElementById('input')
 
 // button.addEventListener('click',() =>{
 //     console.log('HIZO CLICK')
@@ -363,24 +363,55 @@ const input = document.getElementById('input')
 //     box.classList.replace('green','red')
 // })
 
-input.addEventListener('keydown', ()=>{
-    console.log('haz pulsado una tecla')
+// input.addEventListener('keydown', ()=>{
+//     console.log('haz pulsado una tecla')
+// })
+
+// input.addEventListener('keyup', ()=>{
+//     console.log('haz solado una tecla')
+// })
+
+// input.addEventListener('keypress', ()=>{
+//     console.log('estas pulsando  una tecla')
+// })
+
+
+const form = document.getElementById('form')
+const input = document.getElementById('input')
+const button = document.getElementById('button')
+
+
+// input.addEventListener('keyup', (e) =>{
+//     console.log(e.key)
+// })
+
+// addEventListener('click', (e) =>{
+//     console.log(e)
+// })
+
+// button.addEventListener('click', (e) =>{
+//     console.log(e)
+// })
+
+const galery = document.getElementById('galery')
+const link = document.getElementById('link')
+
+// galery.addEventListener('click',(e) =>{
+//     e.target.classList.add('red')
+// })
+link.addEventListener('click', (e) =>{
+    e.preventDefault()
+    button.click()
+})
+form.addEventListener('submit', (e) =>{
+    e.preventDefault()
+    console.log('el formulario se a enviado')
 })
 
-input.addEventListener('keyup', ()=>{
-    console.log('haz solado una tecla')
+
+button.addEventListener('click', (e) =>{
+    input.value='haz echoi click'
 })
-
-input.addEventListener('keypress', ()=>{
-    console.log('estas pulsando  una tecla')
-})
-
-
-
-
-
-
-
 
 
 
