@@ -423,35 +423,70 @@ const button = document.getElementById('button')
 
 Fragmentos de codigo: document.createDocumentFragment()   */
 
-const days = ['Lunes', 'Mertes', 'Miercoles., Thieves', 'Viernes', 'Sabado', 'Domingo'] 
+// const days = ['Lunes', 'Mertes', 'Miercoles., Thieves', 'Viernes', 'Sabado', 'Domingo'] 
 
-const title = document.getElementById('title')
-const daysList = document.getElementById('daysList')
-const selectDays = document.getElementById('daysSelect') 
+// const title = document.getElementById('title')
+// const daysList = document.getElementById('daysList')
+// const selectDays = document.getElementById('daysSelect') 
 
 //const itemList = document.createElement('LI')
 
 //daysList.appendChild(itemList)
 
-title.innerHTML = 'dom  <span>crear e insertar elementos I</span> '
+// title.innerHTML = 'dom  <span>crear e insertar elementos I</span> '
 
 //itemList.textContent ='Lunes'
 //console.log(daysList)
 
-const fragment= document.createDocumentFragment()
+// const fragment= document.createDocumentFragment()
 // for(const day of days){
 //     const itemList = document.createElement('LI')
 //   itemList.textContent =day
 //    fragment.appendChild(itemList)
 // }
 
-for(const day of days){
-    const selectItem= document.createElement('OPTION')
-    selectItem.setAttribute('value',day.toLowerCase())
-    selectItem.textContent=day
-    fragment.appendChild(selectItem)
-}
-selectDays.appendChild(fragment)
+// for(const day of days){
+//     const selectItem= document.createElement('OPTION')
+//     selectItem.setAttribute('value',day.toLowerCase())
+//     selectItem.textContent=day
+//     fragment.appendChild(selectItem)
+// }
+// selectDays.appendChild(fragment)
+
+
+
+/**
+ /' Padre - parent (Nodo del que desciende)
+  - parentNode - Devuelve el nodo padre (que puede no ser un elemento) 
+  - parentElement - Devuelve el nodo elemento padre 
+NOTA 
+Los nodos del tipo Document y DocumentFragment nunca van a tener un elemento padre, parentNode devolvera siempre null. 
+Hijos - child (Nodo que desciende de un padre)
+ - childNodes - Devuelve todos los nodos hijos 
+ - children - Devuelve todos los nodos elementos hijos 
+ - firstChild - Devueleve el primer nodo hijo
+  - firstElementChild - Devueleve el primer nodo elemento hijo 
+  - lastChild - Devueleve el ultimo nodo hijo 
+  - lastElementChild - Devueleve el Ultimo nodo elemento hijo 
+  - hasChildNodes() - Devueleve true si el nodo tiene hijos y false si no tiene 
+Hermanos - siblings (Nodo al mismo nivel) 
+- nextSibling - Devuelve el siguiente nodo hermano 
+- nextElementSibling - previousSibling - previousElementSibling 
+
+*/
+
+const parent = document.getElementById('parent')
+//console.log(document.parentNode);
+//console.log(parent.childNodes);
+//console.log(parent.children[2]);
+// console.log(parent.firstChild);
+
+// console.log(parent.lastChild);
+// console.log(parent.lastElementChild);
+
+
+console.log(parent.nextSibling);
+
 
 
 
