@@ -268,6 +268,59 @@ console.log(title);*/
 
 
 
+//ATRIBUTOS Y CLASES
+/**element.getAttribute('attribute')
+element.getAttribute('attribute', value)
+
+clases
+
+element.classList.add('class','class',...)
+element.classList.remove('class','class',...)
+element.classList.toggle('class',[,force])
+element.classList.contains('class')
+element.classList.replace('oldClass', newClass)
+
+atributos directos 
+id
+value
+ */
+const title = document.getElementById('title')
+const name = document.getElementById('name')
+
+
+
+//console.log(name.getAttribute('id'))
+//name.setAttribute('type', 'date')
+//console.log(title);
+//console.log(name);
+
+//title.classList.add('main-title','other-title')
+//title.classList.remove('title')
+/**if(title.classList.contains('title')){
+console.log('title tiene la clase title')
+}
+else{
+    console.log('title no tiene la clase title' )
+} */
+
+//title.classList.replace('title', 'main-title')
+/**console.log(title.innerHTML)
+console.log(title.textContent) */
+console.log(name.value)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
