@@ -255,16 +255,18 @@ console.log(title);*/
 //const paragraph = document.querySelector('.paragraph:nth-child(2)');
 //console.log(paragraph);
 
-const paragraphs        = document.querySelectorAll('.paragraph');
+//const paragraphs        = document.querySelectorAll('.paragraph');
 //const paragraphsSpread  = [...document.querySelectorAll('.paragraph')];
-const paragraphsArray   = Array.from(document.querySelectorAll('.paragraph')); 
+//const paragraphsArray   = Array.from(document.querySelectorAll('.paragraph')); 
 
-paragraphs[0].style.color = 'red';
+//paragraphs[0].style.color = 'red';
 //paragraphs.map(p=>p.style.color='green');
 //paragraphsSpread.map(p=>p.style.color='green');
-paragraphsArray.map(p=>p.style.color='blue');
-console.log(paragraphs);
-console.log("rama prueba")
+//paragraphsArray.map(p=>p.style.color='green');
+//console.log(paragraphs);
+//console.log("rama prueba");
+
+
 
 
 
