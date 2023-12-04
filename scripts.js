@@ -1,7 +1,7 @@
 /*let numero = 5.3;
 let palabra = 'hola josu';
 
-let respuesta = false; 
+let respuesta = false;
 
 //const pi = 3;
 
@@ -12,14 +12,14 @@ palabra ='asdsdsdsdsd'
 
 //OPERADORES
 /*
-  let a =5; 
+  let a =5;
 let b = 2;
 
 let usuario = 'qwer';
 console.log('hola' + usuario);
 */
 
-//operadores 
+//operadores
 /*
  let a = 5;
 console.log(a);
@@ -34,7 +34,7 @@ console.log(++a);
 
 a += 3;
 console.log(a);
-*/ 
+*/
 /* let cadena ='hola josu';
 let cadenaMinus = cadena.toLowerCase();
 console.log(cadenaMinus);
@@ -117,11 +117,11 @@ console.log(person.sons[1]);*/
 
 /* class Persona{
     constructor(nombre, apellido,edad){
-        this.nombre = nombre 
+        this.nombre = nombre
         this.apellido = apellido
         this.edad = edad
 
-       
+
     }
 }*/
 /* class Libro{
@@ -139,7 +139,7 @@ console.log(person.sons[1]);*/
        en el año ${this.year}`
     }
     getGender(){
-      
+
         return this.gender
     }
 }
@@ -155,13 +155,13 @@ while(libros.length<2){
     {
         libros.push(new Libro(title,author,year,gender))
     }
- }  
- 
-   
+ }
+
+
 const showAllBooks=()=>{
     console.log(libros)
- } 
- 
+ }
+
 
  const showauthors=()=>{
     let autores =[]
@@ -219,7 +219,7 @@ console.log(users);
 let array2 = [5,6,7,8];
 //let arrayConcat = array1.concat(array2);
 let arrayConcat = [...array1, ...array2];
-console.log(arrayConcat);*/ 
+console.log(arrayConcat);*/
 
 
 //enviar un numero indefinido de argumentos aq una funcion  (parametros REST)
@@ -231,13 +231,13 @@ console.log(arrayConcat);*/
     restParms(1,2,3,4) */
 
 
-//libreria math 
+//libreria math
 //const numbers = [ -12,2,3,23,2]
 
 /** console.log(Math.max(...numbers));
 */
 
-//eliminar elementos duplicados 
+//eliminar elementos duplicados
 //console.log([...new Set(numbers)]);
 
 
@@ -246,7 +246,7 @@ document.getElementById('id') - acceder a un elemento a traves de su id
 
 document.queryselector('selectorCSS') - accede al primer elemento que coincida con el selector CSS
 
-document.queryselectorall]('selectorCss') - accede a todos los elementos que coincidan con el selector cssm devuelve un nodelist 
+document.queryselectorall]('selectorCss') - accede a todos los elementos que coincidan con el selector cssm devuelve un nodelist
 */
 /** const title = document.getElementById('title');
 title.textContent = 'DOM  accediendo a nodos';
@@ -257,7 +257,7 @@ console.log(title);*/
 
 //const paragraphs        = document.querySelectorAll('.paragraph');
 //const paragraphsSpread  = [...document.querySelectorAll('.paragraph')];
-//const paragraphsArray   = Array.from(document.querySelectorAll('.paragraph')); 
+//const paragraphsArray   = Array.from(document.querySelectorAll('.paragraph'));
 
 //paragraphs[0].style.color = 'red';
 //paragraphs.map(p=>p.style.color='green');
@@ -280,12 +280,12 @@ element.classList.toggle('class',[,force])
 element.classList.contains('class')
 element.classList.replace('oldClass', newClass)
 
-atributos directos 
+atributos directos
 id
 value
  */
-const title = document.getElementById('title')
-const name = document.getElementById('name')
+//const title = document.getElementById('title')
+//const name = document.getElementById('name')
 
 
 
@@ -306,7 +306,77 @@ else{
 //title.classList.replace('title', 'main-title')
 /**console.log(title.innerHTML)
 console.log(title.textContent) */
-console.log(name.value)
+//console.log(name.value)
+
+
+//EVENTOS
+
+//Eventos de ratan: 
+    // click - cuando pulsamos el boton izquierdo del ratan 
+    // dbclick - cuando pulsamos dos veces seguidas el bot6n izquierdo del ratan 
+    // mouseenter - cuando entramos en la zona que tiene el evento 
+    // mouseleave - cuando salimos de la zona que tiene el evento 
+    // mousedown - cuando pulsamos y no soltamos el boton izquierdo del ratan 
+    // mouseup - cuando soltamos el boton izquierdo del ratan 
+    // mousemove - cuando movemos el ratan 
+//Eventos de teclado:
+    // keydown - cuando pulsamos una tecla 
+    // keyup - cuando soltamos una tecla 
+    // keypress - cuando pulsamos una tecla y no la soltamos 
+
+
+
+const button = document.getElementById('button')
+const box = document.getElementById('box')
+const input = document.getElementById('input')
+
+// button.addEventListener('click',() =>{
+//     console.log('HIZO CLICK')
+// })
+
+// button.addEventListener('dblclick', ()=>{
+//     console.log("dbole click")
+// })
+
+// box.addEventListener('mouseenter', () => {
+//     box.classList.replace('red','green')
+// })
+
+// box.addEventListener('mouseleave', () => {
+//     box.classList.replace('green','red')
+
+// })
+
+
+// box.addEventListener('mousedown', () =>{
+//     console.log('haz pulsado en la caja');
+// })
+
+// box.addEventListener('mouseup', () =>{
+//     console.log('haz soltado el boton izquiero en la caja');
+// })
+
+// box.addEventListener('mousemove', () =>{
+//     box.classList.replace('red','green')
+// })
+// box.addEventListener('mouseleave', () =>{
+//     box.classList.replace('green','red')
+// })
+
+input.addEventListener('keydown', ()=>{
+    console.log('haz pulsado una tecla')
+})
+
+input.addEventListener('keyup', ()=>{
+    console.log('haz solado una tecla')
+})
+
+input.addEventListener('keypress', ()=>{
+    console.log('estas pulsando  una tecla')
+})
+
+
+
 
 
 
