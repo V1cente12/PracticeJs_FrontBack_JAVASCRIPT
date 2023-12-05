@@ -376,9 +376,9 @@ console.log(title.textContent) */
 // })
 
 
-const form = document.getElementById('form')
-const input = document.getElementById('input')
-const button = document.getElementById('button')
+// const form = document.getElementById('form')
+// const input = document.getElementById('input')
+// const button = document.getElementById('button')
 
 
 // input.addEventListener('keyup', (e) =>{
@@ -475,7 +475,7 @@ Hermanos - siblings (Nodo al mismo nivel)
 
 */
 
-const parent = document.getElementById('parent')
+//const parent = document.getElementById('parent')
 //console.log(document.parentNode);
 //console.log(parent.childNodes);
 //console.log(parent.children[2]);
@@ -485,7 +485,57 @@ const parent = document.getElementById('parent')
 // console.log(parent.lastElementChild);
 
 
-console.log(parent.nextSibling);
+//console.log(parent.nextSibling);
+
+//window.alert('hola')
+
+// addEventListener('scroll',(e) =>{
+//    console.log(e); 
+// })
+
+// const name = prompt("escriba su nombre")
+// console.log(name);
+
+// if(confirm('acepta?')){
+//     console.log('el ususario acepto');
+
+// }
+// else{
+//     console.log('le ususario no acepto');
+// }
+
+
+// console.log(location.href);
+// console.log(location.protocol);
+// console.log(location.host);
+// console.log(location.pathname);
+// console.log(location.hash);
+//location.reload()
+
+//PETICIONES HTTPS
+
+const button = document.getElementById('button')
+
+button.addEventListener('click', () =>{
+    let xhr
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest()
+    }
+    else{
+        xhr = new ActiveXObject('Microsoft.XMLHTTP')
+    }
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/users')
+    xhr.addEventListener('load', (data) =>{
+        const Datajson = JSON.parse(data.target.response);
+        const list = document.getElementById('list')
+        for(const userinfo of Datajson){
+            const listItem =document.createElement('LI')
+            listItem.textContent = `${userinfo.id} - ${userinfo.name}`
+            list.appendChild(listItem)
+        }
+    })
+    xhr.send()
+})
 
 
 
